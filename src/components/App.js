@@ -177,7 +177,8 @@ class App extends Component {
     socket.emit('punch', {
       username: this.props.username,
       password: this.props.password && decrypt( this.props.password),
-      action
+      action,
+      version: '20190422001'
     });
   }
 
